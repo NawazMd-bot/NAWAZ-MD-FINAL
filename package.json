@@ -28,7 +28,7 @@
     "start": "pm2 start . --attach --name nawaz-md",
     "docker": "pm2-runtime start . --name nawaz-md",
     "stop": "pm2 stop nawaz-md",
-    "postinstall": "node -e \"try { require('sharp') } catch (e) { process.exit(1); }\" || yarn add --ignore-engines sharp@0.34.5"
+    "postinstall": "node -e \"try { require('sharp') } catch (e) { process.exit(1); }\" || npm install sharp@0.34.5"
   },
   "author": "NAWAZ SHAIKH",
   "license": "MIT",
