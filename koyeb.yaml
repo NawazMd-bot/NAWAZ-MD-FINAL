@@ -1,0 +1,32 @@
+name: nawaz-md
+runtime: docker
+docker:
+  dockerfile: Dockerfile
+env:
+  - key: SESSION_ID
+    value: ""
+  - key: KOYEB
+    value: "true"
+  - key: DATABASE_URL
+    value: ""
+  - key: SUDO
+    value: ""
+  - key: PREFIX
+    value: "."
+  - key: STICKER_PACKNAME
+    value: "💋,NAWAZ MD"
+  - key: ALWAYS_ONLINE
+    value: "false"
+  - key: LOG_MSG
+    value: "false"
+  - key: LANGUAG
+    value: "en"
+  - key: WARN_LIMIT
+    value: "3"
+regions:
+  - fra
+instance_types:
+  - nano
+scalings:
+  - min: 1
+    max: 1
